@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+
 import { Geist, Geist_Mono } from "next/font/google";
+
+import { Toaster } from "react-hot-toast";
+
+import Navbar from "@/components/ui/Navbar";
+import AOSInitializer from "@/components/AOS";
+import { NextProgress } from "@/components/NextProgress";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,10 +32,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <AOSInitializer />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar />
+        <NextProgress />
         {children}
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+        />
       </body>
     </html>
   );
