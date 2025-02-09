@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### **SocialJSON - A Simple Social Media App**  
 
-## Getting Started
+🚀 Build a social media app using **Next.js, TypeScript, Tailwind CSS, and Axios**, powered by the **JSONPlaceholder API**.  
 
-First, run the development server:
+📺 **Watch the Full Tutorial:** [![YouTube Video](https://img.shields.io/badge/Watch%20on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=mTz4m91WW9w)  
 
+---
+
+## **🔹 Tech Stack**  
+- **[Next.js](https://nextjs.org/)** - React Framework for SSR & SSG  
+- **[TypeScript](https://www.typescriptlang.org/)** - Typed JavaScript for better development  
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework  
+- **[Axios](https://axios-http.com/)** - Promise-based HTTP client for API requests  
+- **[JSONPlaceholder API](https://jsonplaceholder.typicode.com/)** - Free REST API for mock data  
+
+---
+
+## API Endpoints
+**Base URL:** `https://jsonplaceholder.typicode.com`
+
+### ✨ Posts
+- **All posts:** `[BASE_URL]/posts`
+- **Specific post:** `[BASE_URL]/posts/{postId}`
+- **Posts from a specific user:**  
+  - `[BASE_URL]/users/{userId}/posts`  
+  - `[BASE_URL]/posts?userId={userId}`  
+
+### 👤 Users
+- **All users:** `[BASE_URL]/users`
+
+### 💬 Comments
+- **All comments:** `[BASE_URL]/comments`
+- **Comments of a specific post:**  
+  - `[BASE_URL]/posts/{postId}/comments`  
+  - `[BASE_URL]/comments?postId={postId}`  
+
+### 📉 Todos
+- **Todos of a specific user:** `[BASE_URL]/users/{userId}/todos`
+
+### 📸 Albums & Photos
+- **Albums of a specific user:** `[BASE_URL]/users/{userId}/albums`
+- **Photos of a specific album:** `[BASE_URL]/albums/{albumId}/photos`
+
+---
+
+## **📂 Installation & Setup**  
+
+1️⃣ Clone the repository  
+```bash
+git clone https://github.com/your-username/socialjson.git
+cd socialjson
+```
+  
+2️⃣ Install dependencies  
+```bash
+npm install
+# or
+yarn install
+```
+  
+3️⃣ Run the development server  
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+  
+4️⃣ Open your browser and visit  
+```
+http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **📢 Contributing**  
+Feel free to fork this repo, make changes, and submit a PR! Any feedback is welcome.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📩 Let me know in the YouTube comments if you have any questions or ideas for future tutorials!  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+⭐ **Don't forget to star the repo if you found it helpful!** 🌟  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#NextJS #TypeScript #WebDevelopment #TailwindCSS #Axios #SocialJSON
